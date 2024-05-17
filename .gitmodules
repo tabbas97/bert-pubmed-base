@@ -1,0 +1,3 @@
+[submodule "distilbert-base-uncased-finetuned-pubmed-tabbas97"]
+	path = distilbert-base-uncased-finetuned-pubmed-tabbas97
+	url = ./distilbert-base-uncased-finetuned-pubmed-tabbas97
