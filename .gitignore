@@ -1,3 +1,6 @@
 .dotnet/
 .keras/
 .vscode-server/
+.lightning_studio/
+.idea/
+.vscode/

@@ -4,6 +4,9 @@ This is a finetune of DistilBERT finetuned to run on Pubmed dataset. The model i
 
 The pubmed-torch version was fully finetuned on the Pubmed dataset. The lora version is only an adapter that is finetuned on the dataset. We also only lora tuned the query and value weights of the attention layer. This was the suggestion in the original LORA paper.
 
+## In Progress
+- [] Fixing summarizer module to allow lora adapted model.
+
 ## Completed
 
 - [x] Fully finetuned model
