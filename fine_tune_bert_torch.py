@@ -39,8 +39,8 @@ def tokenize_function(examples):
 
 data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm_probability=0.15)
 
-train_size = 500
-# train_size = len(dataset["train"]*0.8)
+# train_size = 500
+train_size = int(len(dataset["train"])*0.8)
 test_size = int(0.1 * train_size)
 
 downsampled_dataset = dataset["train"].train_test_split(
@@ -80,6 +80,7 @@ trainer = Trainer(
     data_collator=data_collator,
     train_dataset=downsampled_dataset["train"],
     eval_dataset=downsampled_dataset["test"],
+    tokenizer=tokenizer,
     # optimizers=optimizer,
 )
 
